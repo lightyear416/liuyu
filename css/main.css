@@ -18,6 +18,7 @@
  *  11. skills
  *  12. credentials
  *  13. portfolio
+ *  17. patent
  *  14. stats
  *  15. contact
  *  16. footer
@@ -2537,6 +2538,109 @@ header .header-logo a {
 	clear: both;
 }
 
+/* ===================================================================
+ *  17. patent - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#patent {
+	background: #EBEBFF;
+	min-height: 800px;
+	position: relative;
+	padding: 12rem 0 15rem;
+}
+
+#patent .patent-content h2 {
+	margin-bottom: 4.8rem;
+	color: #4C2405;
+	padding-left: 8rem;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+	position: relative;
+}
+
+#patent .patent-content h2::before {
+	display: block;
+	content: "";
+	height: 3px;
+	width: 4rem;
+	background-color: #aeaeae;
+	position: absolute;
+	top: 50%;
+	left: 2rem;
+	margin-top: -3px;
+}
+
+#patent .timeline-wrap {
+	position: relative;
+	text-align: left;
+}
+
+#patent .timeline-wrap::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 2rem;
+	top: 0;
+}
+
+#patent .timeline-block {
+	position: relative;
+	padding-left: 8rem;
+	margin-bottom: 4.2rem;
+}
+
+#patent .timeline-ico {
+	height: 4.8rem;
+	width: 4.8rem;
+	line-height: 4.8rem;
+	background: #4C2405;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	left: 2rem;
+	top: 0;
+	margin-left: -2.4rem;
+}
+
+#patent .timeline-header .timeframe {
+	font-family: "montserrat-regular", sans-serif;
+	font-size: 1.6rem;
+	color: #757575;
+	margin-bottom: 0;
+}
+
+#patent .timeline-header h3 {
+	font-size: 2.4rem;
+	line-height: 1.25;
+	margin-bottom: 0;
+}
+
+#patent .bricks-wrapper:before,
+#patent .bricks-wrapper:after {
+	content: "";
+	display: table;
+}
+
+#patent .bricks-wrapper:after {
+	clear: both;
+}
+
+#patent .bricks-wrapper .brick {
+	float: left;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+
+#patent .bricks-wrapper .brick:nth-child(2n+1) {
+	clear: both;
+}
+
 /* ------------------------------------------------------------------- 
  * masonry entries - (_layout.css) 
  * ------------------------------------------------------------------- */
@@ -2751,10 +2855,18 @@ header .header-logo a {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * portfolio
+ * portfolio patent
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:600px) {
 	#portfolio .bricks-wrapper .brick {
+		float: none;
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	#patent .bricks-wrapper .brick {
 		float: none;
 		width: 100%;
 	}
