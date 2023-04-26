@@ -1250,7 +1250,7 @@ input::-moz-focus-inner {
 
 .section-intro h3 {
 	font-family: "montserrat-bold", sans-serif;
-	font-size: 2rem;
+	font-size: 2.8rem;
 	color: #4C2405;
 	text-transform: uppercase;
 	letter-spacing: .15rem;
@@ -1673,7 +1673,7 @@ header .header-logo a {
 	width: 100%;
 	height: 100%;
 	opacity: .6;
-	background-color: #000000;
+	/*background-color: #000000;*/
 }
 
 .home-content-table {
@@ -2538,6 +2538,7 @@ header .header-logo a {
 	clear: both;
 }
 
+
 /* ===================================================================
  *  17. patent - (_layout.scss)
  *
@@ -2609,7 +2610,8 @@ header .header-logo a {
 
 #patent .timeline-header .timeframe {
 	font-family: "montserrat-regular", sans-serif;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
+	font-weight:bold;
 	color: #757575;
 	margin-bottom: 0;
 }
@@ -2638,6 +2640,215 @@ header .header-logo a {
 }
 
 #patent .bricks-wrapper .brick:nth-child(2n+1) {
+	clear: both;
+}
+
+/* ===================================================================
+ *  18. funding - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#funding {
+    background: #E1BA9C;
+    min-height: 800px;
+    position: relative;
+    padding: 12rem 0 15rem;
+}
+
+#funding .funding-content h2 {
+	margin-bottom: 4.8rem;
+	color: #4C2405;
+	padding-left: 8rem;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+	position: relative;
+}
+
+#funding .funding-content h2::before {
+	display: block;
+	content: "";
+	height: 3px;
+	width: 4rem;
+	background-color: #aeaeae;
+	position: absolute;
+	top: 50%;
+	left: 2rem;
+	margin-top: -3px;
+}
+
+#funding .timeline-wrap {
+	position: relative;
+	text-align: left;
+}
+
+#funding .timeline-wrap::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 2rem;
+	top: 0;
+}
+
+#funding .timeline-block {
+	position: relative;
+	padding-left: 8rem;
+	margin-bottom: 4.2rem;
+}
+
+#funding .timeline-ico {
+	height: 4.8rem;
+	width: 4.8rem;
+	line-height: 4.8rem;
+	background: #4C2405;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	left: 2rem;
+	top: 0;
+	margin-left: -2.4rem;
+}
+
+#funding .timeline-header .timeframe {
+	font-family: "montserrat-regular", sans-serif;
+	font-size: 1.8rem;
+	font-weight:bold;
+	color: #757575;
+	margin-bottom: 0;
+}
+
+#funding .timeline-header h3 {
+	font-size: 2.4rem;
+	line-height: 1.25;
+	margin-bottom: 0;
+}
+
+#funding .bricks-wrapper:before,
+#funding .bricks-wrapper:after {
+	content: "";
+	display: table;
+}
+
+#funding .bricks-wrapper:after {
+	clear: both;
+}
+
+#funding .bricks-wrapper .brick {
+	float: left;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+
+#funding .bricks-wrapper .brick:nth-child(2n+1) {
+	clear: both;
+}
+
+
+/* ===================================================================
+ *  19. award - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#award {
+	background: #E3D7C0;
+	min-height: 800px;
+	position: relative;
+	padding: 12rem 0 15rem;
+}
+
+#award .patent-content h2 {
+	margin-bottom: 4.8rem;
+	color: #4C2405;
+	padding-left: 8rem;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+	position: relative;
+}
+
+#award .patent-content h2::before {
+	display: block;
+	content: "";
+	height: 3px;
+	width: 4rem;
+	background-color: #aeaeae;
+	position: absolute;
+	top: 50%;
+	left: 2rem;
+	margin-top: -3px;
+}
+
+#award .timeline-wrap {
+	position: relative;
+	text-align: left;
+}
+
+#award .timeline-wrap::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 2rem;
+	top: 0;
+}
+
+#award .timeline-block {
+	position: relative;
+	padding-left: 8rem;
+	margin-bottom: 4.2rem;
+}
+
+#award .timeline-ico {
+	height: 4.8rem;
+	width: 4.8rem;
+	line-height: 4.8rem;
+	background: #4C2405;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	left: 2rem;
+	top: 0;
+	margin-left: -2.4rem;
+}
+
+#award .timeline-header .timeframe {
+	font-family: "montserrat-regular", sans-serif;
+	font-size: 1.8rem;
+	font-weight:bold;
+	color: #757575;
+	margin-bottom: 0;
+}
+
+#award .timeline-header h3 {
+	font-size: 2.4rem;
+	line-height: 1.25;
+	margin-bottom: 0;
+}
+
+#award .bricks-wrapper:before,
+#award .bricks-wrapper:after {
+	content: "";
+	display: table;
+}
+
+#award .bricks-wrapper:after {
+	clear: both;
+}
+
+#award .bricks-wrapper .brick {
+	float: left;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+
+#award .bricks-wrapper .brick:nth-child(2n+1) {
 	clear: both;
 }
 
@@ -2867,6 +3078,22 @@ header .header-logo a {
 
 @media only screen and (max-width:600px) {
 	#patent .bricks-wrapper .brick {
+		float: none;
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	#funding .bricks-wrapper .brick {
+		float: none;
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	#award .bricks-wrapper .brick {
 		float: none;
 		width: 100%;
 	}

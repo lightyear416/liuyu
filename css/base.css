@@ -882,6 +882,30 @@ textarea {
 	background: url("../images/chinesezodiac/zhu.png") no-repeat
 }
 
+.patent-1 {
+	background: url("../images/patent.png") no-repeat
+}
+
+.patent-2 {
+	background: url("../images/patent2.png") no-repeat
+}
+
+.funding-1 {
+	background: url("../images/funding.png") no-repeat
+}
+
+.funding-2 {
+	background: url("../images/funding2.png") no-repeat
+}
+
+.award-1 {
+	background: url("../images/award.png") no-repeat
+}
+
+.award-2 {
+	background: url("../images/award2.png") no-repeat
+}
+
 .myself{
 	font-weight:900;
 	color:#802A2A;
