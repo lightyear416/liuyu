@@ -3577,9 +3577,19 @@ footer .footer-social li:last-child {
     background-color: #990033;
 }
 
+.badge-cofirst{
+	color: #fff;
+    background-color: #993300;
+}
+
 .badge-correspond{
 	color: #fff;
     background-color: orange;
+}
+
+.badge-cocorrespond{
+	color: #fff;
+    background-color: #D1D103;
 }
 
 .badge-reward{
